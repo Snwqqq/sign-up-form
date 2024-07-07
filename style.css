@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'font1';
+    src: url(./fonts/CaviarDreams-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'font1', Arial, Helvetica, sans-serif;
 }
 body{
     height: 100vh;
@@ -20,16 +29,50 @@ body{
     left: 0;
     right: 0;
     top: 10vh;
-    background-color: rgba(100, 209, 219, 0.269);
+    background-color: rgba(255, 255, 255, 0.269);
 }
 .left-img{
     height: 100vh;
 }
+
+header{
+    padding: 20px;
+    background-color: rgb(240, 252, 255);
+}
+
 form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 252, 255);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.input-cont{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30vw;
+    border: 1px solid rebeccapurple;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 63vw;
+}
+.second-half{
     display: flex;
     flex-direction: column;
 }
 
-input{
-    display: block;
+
+footer{
+    height: 100vh;
+    background-color: rgb(240, 252, 255);
 }
