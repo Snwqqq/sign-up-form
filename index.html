@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Wha;le Sing Up NOW!!!</title>
 </head>
 <body> 
     <div class="img-holder">
-        <img class="left-img" src="./pictures/bluwhale2.jpeg" alt="spermwhale">
+        <img class="left-img" src="./pictures/bluewhale.jpeg" alt="spermwhale">
         <img class="logo" src="./pictures/whale-logo.png" alt="logo of whale corp">
     </div>
     <div class="second-half">
@@ -20,66 +20,68 @@
             <p>You know you want to.</p>
         </header>
         <form action="#" method="post">
-            <section>
-                <div class="input-cont">
-                    <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name">
-                </div>
-                <div class="input-cont">
-                    <label for="">Your whale name:</label>
-                    <input type="text">
-                </div>
-                <div class="input-cont">
-                    <label for="">E-mail:</label>
-                    <input type="text">
-                </div>
-                <div class="input-cont">
-                    <label for="">Phone number:</label>
-                    <input type="text">
-                </div>
-            </section>
-            <section>
-                 <div class="input-cont">
-                    <label for="">What whale do you want to be?</label>
-                    <select name="" id="">
-                        <option>Spermwhale</option>
-                        <option>Orca</option>
-                        <option>Blue whale</option>
-                    </select>
-                </div>
-                <div class="input-cont">
-                    <label for="">Color</label>
-                    <input type="text">
-                </div>
+            <div class="top-form">
+                <h2>Let's do it!</h2>
+                <section>
+                    <div class="input-cont">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="input-cont">
+                        <label for="whale-name">Your whale name:</label>
+                        <input type="text" id="whale-name" name="whale-name">
+                    </div>
+                    <div class="input-cont">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-cont">
+                        <label for="tel">Phone number:</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
                 </section>
-
-            <section>
-                <fieldset>
-                    <legend>Whale gender</legend>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">Male whale</label>
+                <section>
+                     <div class="input-cont">
+                        <label for="">What whale do you want to be?</label>
+                        <select name="" id="">
+                            <option value="spermwhale">Spermwhale</option>
+                            <option value="orca">Orca</option>
+                            <option value="bluewhale">Blue whale</option>
+                        </select>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">Female whale</label>
+                    <div class="input-cont">
+                        <label for="">Color</label>
+                        <input type="color">
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">Random</label>
+                    </section>
+                <section>
+                    <fieldset>
+                        <legend>Whale gender</legend>
+                        <div>
+                            <input type="radio" id="gender-male" name="gender">
+                            <label for="gender-male">Male whale</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender-female" name="gender">
+                            <label for="gender-female">Female whale</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender-rand" name="gender">
+                            <label for="gender-rand">Random</label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section>
+                    <div class="input-cont">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
                     </div>
-                </fieldset>
-            </section>
-            <section>
-                <div class="input-cont">
-                    <label for="">Password</label>
-                    <input type="text">
-                </div>
-                <div class="input-cont">
-                    <label for="">Confirm Password</label>
-                    <input type="text">
-                </div> 
-            </section>
+                    <div class="input-cont">
+                        <label for="conf-password">Confirm Password</label>
+                        <input type="password" id="conf-password" name="conf-password">
+                    </div>
+                </section>
+            </div>
 
         <footer>
             <button type="submit">Become a whale!</button>

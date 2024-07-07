@@ -13,13 +13,26 @@
     font-family: 'font1', Arial, Helvetica, sans-serif;
 }
 body{
-    height: 100vh;
+    max-height: 100vh;
     margin: 0;
     display: flex;
 }
+h1{
+    font-size: 2.3vh;
+}
+
+h2{
+    padding: 10px 30px;
+    margin: 0;
+}
+header>p{
+    font-size: 2.2vh;
+    text-decoration: underline;
+}
+
 .img-holder{
-    height: 100vh;
     position: relative;
+    display:flex;
 }
 .logo{
     position: absolute;
@@ -34,6 +47,12 @@ body{
 .left-img{
     height: 100vh;
 }
+.second-half{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    background-color: rgb(240, 252, 255);
+}
 
 header{
     padding: 20px;
@@ -44,7 +63,28 @@ form{
     display: flex;
     flex-direction: column;
     background-color: rgb(240, 252, 255);
+    font-size: 2vh;
 }
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+select{
+    height: 2.5vh;
+    font-size: 2vh;
+    font-family: 'font1',Arial, Helvetica, sans-serif;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='password']:focus{
+    background-color: rebeccapurple ;
+}
+
+
+
 section{
     display: flex;
     flex-wrap: wrap;
@@ -57,22 +97,36 @@ section{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 30vw;
-    border: 1px solid rebeccapurple;
+    flex:1;
+    min-width: 20vw;
 }
 
 fieldset{
     display: flex;
     flex-direction: column;
-    width: 63vw;
+    width: 60vw;
 }
-.second-half{
-    display: flex;
-    flex-direction: column;
+
+.top-form{
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.275);
+    background-color: rgb(250, 255, 255);
+    border-radius: 5px;
 }
 
 
 footer{
-    height: 100vh;
+    font-size: 2.2vh;
+    padding: 30px;
     background-color: rgb(240, 252, 255);
+}
+
+button{
+    font-size: 2.2vh;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }
