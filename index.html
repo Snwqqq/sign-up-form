@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <title>Wha;le Sing Up NOW!!!</title>
+    <title>Whale Sing Up NOW!!!</title>
 </head>
 <body> 
     <div class="img-holder">
@@ -19,17 +19,19 @@
             </h1>
             <p>You know you want to.</p>
         </header>
-        <form action="#" method="post">
+        <form action="#" method="post" id="my-form">
             <div class="top-form">
                 <h2>Let's do it!</h2>
                 <section>
                     <div class="input-cont">
                         <label for="first-name">First name:</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
+                        <span class="req"></span>
                     </div>
                     <div class="input-cont">
                         <label for="whale-name">Your whale name:</label>
-                        <input type="text" id="whale-name" name="whale-name">
+                        <input type="text" id="whale-name" name="whale-name" required>
+                        <span class="req"></span>
                     </div>
                     <div class="input-cont">
                         <label for="email">E-mail:</label>
@@ -42,23 +44,23 @@
                 </section>
                 <section>
                      <div class="input-cont">
-                        <label for="">What whale do you want to be?</label>
-                        <select name="" id="">
+                        <label for="whale-type">What whale do you want to be?</label>
+                        <select name="whale-type" id="whale-type">
                             <option value="spermwhale">Spermwhale</option>
                             <option value="orca">Orca</option>
                             <option value="bluewhale">Blue whale</option>
                         </select>
                     </div>
                     <div class="input-cont">
-                        <label for="">Color</label>
-                        <input type="color">
+                        <label for="color">Whale Color:</label>
+                        <input type="color" name="color" id="color">
                     </div>
                     </section>
                 <section>
                     <fieldset>
                         <legend>Whale gender</legend>
                         <div>
-                            <input type="radio" id="gender-male" name="gender">
+                            <input type="radio" id="gender-male" name="gender" checked>
                             <label for="gender-male">Male whale</label>
                         </div>
                         <div>
@@ -73,19 +75,23 @@
                 </section>
                 <section>
                     <div class="input-cont">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="5" maxlength="20" required>
+                        <span class="req"></span>
+                        <p>password lenghth 5-20</p>
                     </div>
                     <div class="input-cont">
-                        <label for="conf-password">Confirm Password</label>
-                        <input type="password" id="conf-password" name="conf-password">
+                        <label for="conf-password">Confirm Password:</label>
+                        <input type="password" id="conf-password" name="conf-password" minlength="5" maxlength="20" required>
+                        <span class="req"></span>
+                        <p>password lenghth 5-20</p>
                     </div>
                 </section>
             </div>
 
         <footer>
             <button type="submit">Become a whale!</button>
-            <p>Alredy a whale? <span>Sign in.</span></p>
+            <p>Alredy a whale? <span class="sign-in">Sign in.</span></p>
         </footer>
             </form>
     </div>

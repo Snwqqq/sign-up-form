@@ -71,19 +71,29 @@ input[type='email'],
 input[type='tel'],
 input[type='password'],
 select{
-    height: 2.5vh;
-    font-size: 2vh;
+    height: min(2.5vh,2.5vw);
+    font-size: min(2vh,2vw);
     font-family: 'font1',Arial, Helvetica, sans-serif;
+    border-radius: min(0.3vh,0.3vw);
+    width: 25vh;
 }
 
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='tel']:focus,
 input[type='password']:focus{
-    background-color: rebeccapurple ;
+    background-color: rgba(211, 251, 255, 0.314) ;
 }
-
-
+input:optional{
+background-color: rgb(244, 244, 244);
+border: 0.5px solid black;
+}
+input:valid{
+    border: 2px solid green;
+}
+input:invalid{
+    border: 2px solid red;
+}
 
 section{
     display: flex;
@@ -99,6 +109,7 @@ section{
     align-items: start;
     flex:1;
     min-width: 20vw;
+    position: relative;
 }
 
 fieldset{
@@ -114,19 +125,68 @@ fieldset{
     background-color: rgb(250, 255, 255);
     border-radius: 5px;
 }
+.req::before{
+ position: absolute;
+ content: 'required';
+ top: min(2.2vh,2.2vw);
+ padding: min(0.2vh,0.2vw);
+ left: min(22.8vh,22.8vw);
+ background-color: black;
+ color: white;
+ font-size: min(1vh,1vw);
+ border-radius: min(0.4vh,0.4vw);
+}
 
+input:valid>.req::after{
+    position: absolute;
+    top: min(2.5vh,2.5vw);
+    padding: min(0.2vh,0.2vw);
+    left: min(28vh,28vw);
+    font-size: min(4vh,4vw);
+    border-radius: min(0.4vh,0.4vw); 
+   }
+
+input:required:valid+.req::after{
+ position: absolute;
+ content: "✓";
+ top: min(2.5vh,2.5vw);
+ padding: min(0.2vh,0.2vw);
+ left: min(28vh,28vw);
+ color: green;
+ font-size: min(4vh,4vw);
+ border-radius: min(0.4vh,0.4vw); 
+}
+input:required:invalid+.req::after{
+    position: absolute;
+    content: "✖";
+    top: min(3vh,3vw);
+    padding: min(0.2vh,0.2vw);
+    left: min(28vh,28vw);
+    color: red;
+    font-size: min(4vh,4vw);
+    border-radius: min(0.4vh,0.4vw); 
+   }
+div>p{
+    font-size: 1vh;
+}
 
 footer{
-    font-size: 2.2vh;
-    padding: 30px;
+    font-size: min(2.2vh,2.2vw);
+    padding: min(2vh,2vw) min(5vh,5vw);
     background-color: rgb(240, 252, 255);
 }
 
 button{
-    font-size: 2.2vh;
-    border-radius: 5px;
+    font-size: min(2.2vh,2.2vw);
+    border-radius: min(0.4vh,0.4vw);
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: min(1vh,1vw);
+    cursor: pointer;
+}
+
+.sign-in{
+    color: rgb(0, 94, 255);
+    font-weight: bold;
     cursor: pointer;
 }
