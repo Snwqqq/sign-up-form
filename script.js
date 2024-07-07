@@ -31,6 +31,13 @@ function changeImg(){
 
 changeImg();
 
+document.getElementById('my-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    alert('Now you are whaling!'); // Show alert message
+    location.reload();
+});
+
+
 select.addEventListener('input',()=>{
 changeImg();
 })  
