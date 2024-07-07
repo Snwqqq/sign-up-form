@@ -1,0 +1,35 @@
+:root{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+.img-holder{
+    height: 100vh;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 22vh;
+    object-fit:cover;
+    left: 0;
+    right: 0;
+    top: 10vh;
+    background-color: rgba(100, 209, 219, 0.269);
+}
+.left-img{
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    display: block;
+}
